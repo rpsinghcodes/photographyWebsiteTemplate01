@@ -1,0 +1,39 @@
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.heading {
+    font-size: 50px;
+    font-family: $cursive;
+    color: #fff;
+}
+.heading-secondary {
+    font-size: 28px;
+    font-family: $cursive;
+    color: #fff;
+}
+
+.paragraph {
+    font-size: 26px;
+    font-family: "Roboto";
+    color:#fff;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.red {
+    color:cyan !important;
+    border-color: cyan !important;
+}
+
+@include respond(tab-port) {
+    .heading {
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,42 @@
+.card {
+    a {
+        text-decoration: none;
+        color:white;
+        font-family: $open-sans;   
+        font-size: 28px;     
+    }
+    margin-top: 30px;
+    border-radius: 8px;
+    height: 500px;
+    width:370px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    
+    
+    &_content {
+        position: absolute;
+        bottom: 4%;
+        left:4%;
+        
+        p:last-child {
+            color:$blue;
+            font-size: 20px;
+            border-bottom: 2px solid #0BB4AA;
+            font-family: $cursive;
+        }
+    }    
+}
+
+@include respond(tab-port) {
+    .card {
+        a {
+            font-size: 24px;     
+        }
+        height: 460px;
+        width:300px;
+       
+    }
+}
+

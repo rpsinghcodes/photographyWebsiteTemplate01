@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Photography Template</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="top-nav">
+      <div>
+        Logo Here
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Gallery</a></li>
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero" style="background-image: url(./Assets/images/hero-photo.png);">
+    <h1>Capturing Love Stories</h1>
+    <h4>Let us turn your special day into timeless memories.</h4>
+    <button class="btn red">Contact Now</button>
+  </section>
+  <section class="latestWork">
+    <h1 class="heading">Latest Work</h1>
+    <div class="latestWork-images">
+      <div class="img" style="background-image: url('./Assets/images/recentWork/img1.jpg');" >
+      </div>
+      <div class="img" style="background-image: url('./Assets/images/recentWork/img2.jpg');" >
+      </div>
+      <div class="img" style="background-image: url('./Assets/images/recentWork/img3.jpg');" >
+      </div>
+      <div class="img" style="background-image: url('./Assets/images/recentWork/img4.jpg');" >
+      </div>
+      <div class="img" style="background-image: url('./Assets/images/recentWork/img5.jpg');" >
+      </div>
+      <div class="img" style="background-image: url('./Assets/images/recentWork/img6.jpg');" >
+      </div>
+      <div class="img" style="background-image: url('./Assets/images/recentWork/img7.jpg');" >
+      </div>
+      <div class="img" style="background-image: url('./Assets/images/recentWork/img8.jpg');" >
+      </div>
+      <div class="img" style="background-image: url('Assets/images/recentWork/img9.jpg');" >
+    </div>
+    </div>
+    <button class="btn">Explore more...</button>
+  </section>
+  <section class="services">
+    <h1 class="heading">Our Services</h1>
+    <p class="w-80 paragraph">Discover a world of captivating imagery with our photography services. At [Your Company
+      Name], we're dedicated to
+      transforming moments into timeless visual stories. From wedding celebrations to corporate events, family portraits
+      to product showcases, our team of experienced photographers is committed to capturing the essence of your special
+      moments. With a keen eye for detail and a passion for creativity, we turn every snapshot into a work of art.
+      Explore our diverse range of photography services and let us be your visual storytellers, preserving your
+      cherished memories with skill and precision.</p>
+    <div class="services_cardcontainer">
+      <div class="card" style="background-image: url(./Assets/images/recentWork/img1.jpg);">
+        <a href="#">
+          <div class="card_content">
+            <p>Pre-wedding</p>
+            <p>Explore more -></p>
+          </div>
+        </a>
+      </div>
+      <div class="card" style="background-image: url(./Assets/images/recentWork/img2.jpg);">
+        <a href="#">
+          <div class="card_content">
+            <p>Wedding-Photography</p>
+            <p>Explore more -></p>
+          </div>
+        </a>
+      </div>
+      <div class="card" style="background-image: url(./Assets/images/recentWork/img3.jpg);">
+        <a href="#">
+          <div class="card_content">
+            <p>Candid Photography</p>
+            <p>Explore more -></p>
+          </div>
+        </a>
+      </div>
+      <div class="card" style="background-image: url(./Assets/images/recentWork/img4.jpg);">
+        <a href="#">
+          <div class="card_content">
+            <p>Pre-wedding</p>
+            <p>Explore more -></p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </section>
+  <section class="whyWe">
+    <h1 class="heading">Why We ?</h1>
+    <p class="paragraph w-80">Why Choose Us for Your Special Day? At [Your Company Name], we understand that your
+      wedding is one of the most important days of your life, filled with unique moments and genuine emotions. What sets
+      us apart is our unwavering commitment to transforming those moments into art. Our team of dedicated wedding
+      photographers brings years of experience, a keen eye for detail, and a deep appreciation for the love that fills
+      the air on your wedding day. We take pride in our ability to not just capture pictures, but to encapsulate the
+      essence of your love story. With a perfect blend of creativity and professionalism, we ensure that each shot is a
+      beautiful, timeless memory. From candid shots that freeze genuine expressions to meticulously composed portraits
+      that radiate elegance, we're here to make your wedding day last forever in breathtaking imagery. Choose [Your
+      Company Name] for a wedding photography experience that's as unique as your love story.</p>
+    <a href="" class="btn">Contact Now</a>
+  </section>
+  <section class="reviews">
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="nameAndPhoto">
+            <div class="clientImage" style="background-image:url('./Assets/images/portrait.png')"></div>
+            <div class="clientNameandRating">
+              <p>Rahul Pratap Singh</p>
+              <img src="./Assets/images/Stars.svg" class="stars" alt="Star based Rating image" loading="lazy">
+            </div>
+          </div>
+          <div class="clientWords">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur
+              adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="nameAndPhoto">
+            <div class="clientImage" style="background-image:url('./Assets/images/portrait02.png')"></div>
+            <div class="clientNameandRating">
+              <p>Rahul Pratap Singh</p>
+              <img src="./Assets/images/Stars.svg" class="stars" alt="Star based Rating image" loading="lazy">
+            </div>
+          </div>
+          <div class="clientWords">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur
+              adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="nameAndPhoto">
+            <div class="clientImage" style="background-image:url('./Assets/images/portrait03.png')"></div>
+            <div class="clientNameandRating">
+              <p>Rahul Pratap Singh</p>
+              <img src="./Assets/images/Stars.svg" class="stars" alt="Star based Rating image" loading="lazy">
+            </div>
+          </div>
+          <div class="clientWords">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur
+              adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="nameAndPhoto">
+            <div class="clientImage" style="background-image:url('./Assets/images/portrait04.png')"></div>
+            <div class="clientNameandRating">
+              <p>Rahul Pratap Singh</p>
+              <img src="./Assets/images/Stars.svg" class="stars" alt="Star based Rating image" loading="lazy">
+            </div>
+          </div>
+          <div class="clientWords">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur
+              adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <h1 class="heading">Get In Touch</h1>
+    <div class="social">
+      <div class="social_div">
+        <h2 class="heading-secondary">Social Media</h2>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Whatsaap</a></li>
+      </div>
+      <div class="social_div">
+        <h2 class="heading-secondary">Mobile Number</h2>
+        <li><a href="#">+91 7310925237</a></li>
+        <li><a href="#">+91 7310925237</a></li>
+      </div>
+      <div class="social_div">
+        <h2 class="heading-secondary">Address</h2>
+        <li>2972 Westheimer Rd. Santa Ana, Illinois 85486 </li>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    if( window.innerWidth <= 425) {
+        new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      }
+      if( window.innerWidth <= 768 && window.innerWidth > 425) {
+        new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      }
+  </script>
+</body>
+
+</html>

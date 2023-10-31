@@ -1,0 +1,246 @@
+
+// font-family: 'Playpen Sans', cursive;
+.header {
+    position: fixed;
+    width:100%;
+}
+
+.hero {
+  background-position: center;
+  background-size: cover;
+    height:800px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+
+    h1 {
+        font-size: 80px;
+    }
+    h4{
+        font-size: 30px;
+    }
+    .btn {
+      color:white;
+      border-color: grey;
+    }
+}
+
+
+
+// Latest Work
+
+.latestWork{
+    padding: 60px;
+    background: #131312;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+
+
+    .latestWork-images {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      .img {
+        width: 350px;
+        height: 300px;
+        border-radius: 4px;
+        overflow: hidden;
+        margin: 10px;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+
+    
+}
+
+
+  .services {
+    background: rgba(#131312, .8);
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+
+    &_cardcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+  }
+
+
+
+
+
+
+
+  // why we
+  .whyWe {
+    background: #131312;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+  }
+  .reviews {
+    background: rgba(#131312, .8);
+    padding: 60px;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+ 
+
+  .swiper-slide {
+    background: whitesmoke;
+    border-radius: 8px;
+    padding:60px 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+
+    .nameAndPhoto {
+      display: flex;
+      align-items: center;
+      .clientImage {
+        height: 80px;
+        width: 80px;
+        border-radius:100px;
+        background-position: center;
+        background-size: cover;
+        margin-right: 30px;
+      }
+      .clientNameandRating {
+        display: flex;
+        flex-direction: column;        
+        font-family: $open-sans;
+        font-weight: 600;
+      }
+
+    }
+    
+    .clientWords {
+      margin-top:30px;
+      padding: 20px 30px;
+      border-radius: 8px;
+      background-color: #B3B3B3;
+      font-family: $open-sans;
+    }
+  }
+
+
+  
+  // footer
+
+  .footer {    
+    background: #131312;
+    padding: 60px;
+    .social {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .social_div {
+      li {
+        list-style-type: none;
+        margin: 8px 0;
+        color:#fff;
+        a{
+          text-decoration: none;
+          color:#fff;
+          border-bottom: 1px solid $blue;
+          font-size: 22px;     
+          font-family: $open-sans;  
+          transition: all .2s;
+          
+          &:hover {
+            color:$blue;
+          }
+        }
+      }
+    }
+  }
+
+  @include respond(tab-port) {
+    .hero {
+      height: 100vh;
+      h1 {
+        font-size: 50px;
+      }
+      h4 {
+        font-size: 24px;
+      }
+    }
+  
+    .latestWork{
+      padding: 30px;
+      .latestWork-images {
+        .img {
+          width: 300px;
+          height: 250px;
+          border-radius: 4px;
+          overflow: hidden;
+          margin: 8px;
+          background-position: center;
+          background-size: cover;
+        }
+      }
+  
+      
+  }
+  .services {
+    padding: 30px;
+    font-size: 20px;
+    &_cardcontainer {
+      gap:8px;
+    }
+  }
+
+  .whyWe {
+    font-size: 20px;
+  }
+  .swiper-slide {
+    padding:30px 10px;
+    
+
+    .nameAndPhoto {
+      .clientImage {
+        height: 60px;
+        width: 60px;
+        margin-right: 10px;
+      }
+      .clientNameandRating {
+        p {
+          font-size: 18px;
+        }
+        .stars {
+          width: 70%;
+        }
+      }
+
+    }
+  }
+
+  .footer {
+    padding: 30px;
+    .social_div{
+      flex-wrap: wrap;
+      a {
+        font-size:20px;
+      }
+    }
+     
+  }
+    
+  
+  }
