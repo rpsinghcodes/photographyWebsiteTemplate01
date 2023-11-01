@@ -30,6 +30,8 @@
 
 
 
+
+
 // Latest Work
 
 .latestWork{
@@ -55,9 +57,9 @@
         background-size: cover;
       }
     }
-
     
 }
+
 
 
   .services {
@@ -154,13 +156,13 @@
       li {
         list-style-type: none;
         margin: 8px 0;
-        color:#fff;
+        color:#fff;        
+        font-family: $open-sans;  
         a{
           text-decoration: none;
           color:#fff;
           border-bottom: 1px solid $blue;
           font-size: 22px;     
-          font-family: $open-sans;  
           transition: all .2s;
           
           &:hover {
@@ -242,5 +244,77 @@
      
   }
     
+  
+  }
+
+  @include respond(phone) {
+    .hero {
+      h1 {
+        font-size: 30px;
+      }
+      h4 {
+        font-size: 22px;
+      }
+    }
+    
+    .latestWork {
+      padding: 10px;
+      .latestWork-images {
+        .img {
+          width: 300px;
+          height: 250px;
+          border-radius: 4px;
+          overflow: hidden;
+          margin: 6px;
+          background-position: center;
+          background-size: cover;
+        }
+    }
+  }
+  
+  .services {
+    padding: 10px;
+    p {
+      width:100% ;
+      font-size: 18px ;
+    }    
+  }
+
+  .whyWe {
+    padding: 10px;
+    .paragraph {
+      width:100% !important;
+      font-size: 18px;
+    }
+  }
+
+  .reviews {
+    padding: 10px;
+  }
+  
+  .swiper-slide {
+    padding:15px 5px;
+    
+
+    .nameAndPhoto {
+      .clientImage {
+        height: 60px;
+        width: 60px;
+        margin-right: 10px;
+      }
+      .clientNameandRating {
+        p {
+          font-size: 16px;
+        }
+        .stars {
+          width: 70%;
+        }
+      }
+      .clientWords {
+        padding: 10px;
+      }
+
+    }
+  }
   
   }

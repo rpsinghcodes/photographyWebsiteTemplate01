@@ -37,3 +37,48 @@
         font-size: 40px;
     }
 }
+
+@include respond(phone) {
+    .heading {
+        font-size: 36px;
+    }
+}
+
+// animation
+.animate{
+    position:relative;
+    display:inline-block;
+  }
+  
+  .animate::before {
+    content:'';
+    position:absolute;
+    bottom:0;
+    height:60%;
+    width:0%;
+    background-color:$blue !important;
+    z-index:-1;
+  }
+  
+  .animate:hover::before{
+   animation: hlight .5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes hlight{
+    0% {
+      width:0%;
+    }
+    30% {
+      width:30%;
+    }
+  50% {
+    width:50%;
+  }
+    80% {
+      width:80%;
+    }
+  100% {
+    width:100%;
+  }
+  }

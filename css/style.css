@@ -43,6 +43,39 @@ order: base +  typography > general layout + grid > page layout > components
   .heading {
     font-size: 40px; } }
 
+@media (max-width: 600px) {
+  .heading {
+    font-size: 36px; } }
+
+.animate {
+  position: relative;
+  display: inline-block; }
+
+.animate::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 60%;
+  width: 0%;
+  background-color: #0BB4AA !important;
+  z-index: -1; }
+
+.animate:hover::before {
+  animation: hlight .5s;
+  animation-fill-mode: forwards; }
+
+@keyframes hlight {
+  0% {
+    width: 0%; }
+  30% {
+    width: 30%; }
+  50% {
+    width: 50%; }
+  80% {
+    width: 80%; }
+  100% {
+    width: 100%; } }
+
 .header {
   position: fixed;
   width: 100%; }
@@ -151,13 +184,13 @@ order: base +  typography > general layout + grid > page layout > components
   .footer .social_div li {
     list-style-type: none;
     margin: 8px 0;
-    color: #fff; }
+    color: #fff;
+    font-family: "Open Sans", sans-serif; }
     .footer .social_div li a {
       text-decoration: none;
       color: #fff;
       border-bottom: 1px solid #0BB4AA;
       font-size: 22px;
-      font-family: "Open Sans", sans-serif;
       transition: all .2s; }
       .footer .social_div li a:hover {
         color: #0BB4AA; }
@@ -202,6 +235,46 @@ order: base +  typography > general layout + grid > page layout > components
       flex-wrap: wrap; }
       .footer .social_div a {
         font-size: 20px; } }
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 30px; }
+  .hero h4 {
+    font-size: 22px; }
+  .latestWork {
+    padding: 10px; }
+    .latestWork .latestWork-images .img {
+      width: 300px;
+      height: 250px;
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 6px;
+      background-position: center;
+      background-size: cover; }
+  .services {
+    padding: 10px; }
+    .services p {
+      width: 100%;
+      font-size: 18px; }
+  .whyWe {
+    padding: 10px; }
+    .whyWe .paragraph {
+      width: 100% !important;
+      font-size: 18px; }
+  .reviews {
+    padding: 10px; }
+  .swiper-slide {
+    padding: 15px 5px; }
+    .swiper-slide .nameAndPhoto .clientImage {
+      height: 60px;
+      width: 60px;
+      margin-right: 10px; }
+    .swiper-slide .nameAndPhoto .clientNameandRating p {
+      font-size: 16px; }
+    .swiper-slide .nameAndPhoto .clientNameandRating .stars {
+      width: 70%; }
+    .swiper-slide .nameAndPhoto .clientWords {
+      padding: 10px; } }
 
 .card {
   margin-top: 30px;
@@ -250,6 +323,10 @@ order: base +  typography > general layout + grid > page layout > components
 @media (max-width: 900px) {
   .btn {
     font-size: 24px; } }
+
+@media (max-width: 600px) {
+  .btn {
+    font-size: 20px; } }
 
 .top-nav {
   display: flex;
